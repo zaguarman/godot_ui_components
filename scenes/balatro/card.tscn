@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://ccpeukrdsfbkm"]
 
 [ext_resource type="Texture2D" uid="uid://cskh758f74ngv" path="res://scenes/balatro/visuals/Tiles_A_white.png" id="1_3sp1f"]
-[ext_resource type="Shader" path="res://scenes/shared/shaders/fake_3D.gdshader" id="1_7h7yf"]
-[ext_resource type="Shader" path="res://scenes/shared/shaders/dissolve.gdshader" id="1_8jfk0"]
-[ext_resource type="Script" path="res://scenes/balatro/scripts/card.gd" id="1_borcn"]
+[ext_resource type="Shader" uid="uid://c6yodnpsqmcyl" path="res://scenes/shared/shaders/fake_3D.gdshader" id="1_7h7yf"]
+[ext_resource type="Shader" uid="uid://cn36nbc7r7gul" path="res://scenes/shared/shaders/dissolve.gdshader" id="1_8jfk0"]
+[ext_resource type="Script" uid="uid://vm480gvbpjrk" path="res://scenes/balatro/scripts/card.gd" id="1_borcn"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_kntej"]
 seed = -15
@@ -16,10 +16,10 @@ noise = SubResource("FastNoiseLite_kntej")
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3ph3s"]
 resource_local_to_scene = true
 shader = ExtResource("1_8jfk0")
+shader_parameter/dissolve_texture = SubResource("NoiseTexture2D_bboy4")
 shader_parameter/dissolve_value = 1.0
 shader_parameter/burn_size = 0.03
 shader_parameter/burn_color = Color(1.5, 0.924, 0, 1)
-shader_parameter/dissolve_texture = SubResource("NoiseTexture2D_bboy4")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7aqjh"]
 

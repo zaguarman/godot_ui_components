@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=3 uid="uid://bti1v4d3hhcak"]
 
 [ext_resource type="Texture2D" uid="uid://dexti8gya12jo" path="res://scenes/quiz/visuals/illustration.png" id="1_3qq5e"]
-[ext_resource type="Script" path="res://scenes/quiz/scripts/quiz.gd" id="1_cakb6"]
+[ext_resource type="Script" uid="uid://du3inutfk14eq" path="res://scenes/quiz/scripts/quiz.gd" id="1_cakb6"]
 [ext_resource type="Texture2D" uid="uid://daqck3h8xlea" path="res://scenes/shared/visuals/circle_512.png" id="2_yng6b"]
 [ext_resource type="FontFile" uid="uid://d4imt37tjbuss" path="res://scenes/shared/fonts/lato/Lato-Bold.ttf" id="3_61rg4"]
 [ext_resource type="Texture2D" uid="uid://xcl1kbnikckr" path="res://scenes/quiz/visuals/godot.png" id="3_ieclj"]
@@ -39,20 +39,19 @@ point_count = 3
 curve = SubResource("Curve_rfpv0")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_km45k"]
+particle_flag_disable_z = true
 emission_shape = 6
 emission_ring_axis = Vector3(0, 0, 1)
 emission_ring_height = 1.0
 emission_ring_radius = 85.0
 emission_ring_inner_radius = 75.0
-particle_flag_disable_z = true
-gravity = Vector3(0, 0, 0)
+emission_ring_cone_angle = 90.0
+angle_max = 720.0
 angular_velocity_min = 25.0
 angular_velocity_max = 45.0
-orbit_velocity_min = 0.0
-orbit_velocity_max = 0.0
+gravity = Vector3(0, 0, 0)
 damping_min = 82.397
 damping_max = 92.667
-angle_max = 720.0
 scale_min = 0.4
 scale_max = 0.65
 scale_curve = SubResource("CurveTexture_j6xca")

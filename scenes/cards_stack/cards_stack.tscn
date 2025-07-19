@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://d0mx4seqmfq4d"]
 
-[ext_resource type="Script" path="res://scenes/cards_stack/scripts/cards_stack.gd" id="1_ba6y3"]
+[ext_resource type="Script" uid="uid://bfyg5sp1myk14" path="res://scenes/cards_stack/scripts/cards_stack.gd" id="1_ba6y3"]
 [ext_resource type="PackedScene" uid="uid://vm7jfk3vjddq" path="res://scenes/cards_stack/card.tscn" id="1_bx0j3"]
-[ext_resource type="Script" path="res://scenes/cards_stack/scripts/toggle_3D.gd" id="2_kkgud"]
+[ext_resource type="Script" uid="uid://0i1nlkau1633" path="res://scenes/cards_stack/scripts/toggle_3D.gd" id="2_kkgud"]
 [ext_resource type="FontFile" uid="uid://d4imt37tjbuss" path="res://scenes/shared/fonts/lato/Lato-Bold.ttf" id="3_u21mn"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bb7on"]

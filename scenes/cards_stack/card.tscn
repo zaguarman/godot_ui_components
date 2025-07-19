@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://vm7jfk3vjddq"]
 
-[ext_resource type="Shader" path="res://scenes/shared/shaders/fake_3D.gdshader" id="1_hrtqo"]
-[ext_resource type="Script" path="res://scenes/cards_stack/scripts/card.gd" id="1_s7h5d"]
+[ext_resource type="Shader" uid="uid://c6yodnpsqmcyl" path="res://scenes/shared/shaders/fake_3D.gdshader" id="1_hrtqo"]
+[ext_resource type="Script" uid="uid://bhxcahwxwavf4" path="res://scenes/cards_stack/scripts/card.gd" id="1_s7h5d"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_px6tc"]
 
@@ -10,7 +10,7 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jkqhe"]
 resource_local_to_scene = true
 shader = ExtResource("1_hrtqo")
-shader_parameter/rect_size = null
+shader_parameter/rect_size = Vector2(0, 0)
 shader_parameter/fov = 90.0
 shader_parameter/cull_back = false
 shader_parameter/y_rot = 0.0

@@ -3,7 +3,7 @@
 [ext_resource type="FontFile" uid="uid://wh31x17oioib" path="res://scenes/shared/fonts/roboto_condensed/RobotoCondensed-Regular.ttf" id="1_8jcet"]
 [ext_resource type="Texture2D" uid="uid://cbx0rlqrwqtrq" path="res://scenes/esport_event/assets/pablo-heimplatz-ZODcBkEohk8-unsplash.jpg" id="1_x5ux6"]
 [ext_resource type="Texture2D" uid="uid://dhwh7ymetab4x" path="res://scenes/esport_event/assets/Godot_icon.svg.png" id="2_6ql56"]
-[ext_resource type="Shader" path="res://scenes/shared/shaders/gradientgdshader.gdshader" id="3_a6j01"]
+[ext_resource type="Shader" uid="uid://dljpqkqkq0e72" path="res://scenes/shared/shaders/gradientgdshader.gdshader" id="3_a6j01"]
 [ext_resource type="FontFile" uid="uid://d4imt37tjbuss" path="res://scenes/shared/fonts/lato/Lato-Bold.ttf" id="5_oal8g"]
 [ext_resource type="Texture2D" uid="uid://drairmbq6eaj1" path="res://scenes/shared/icons/icons8-trophy-96.png" id="6_kg23u"]
 [ext_resource type="Texture2D" uid="uid://chuj6ex4pevjd" path="res://scenes/shared/icons/icons8-person-96.png" id="7_g7c81"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://c52okrti73ehq"]
 
 [ext_resource type="Texture2D" uid="uid://bmfmtnp1mlonv" path="res://scenes/loading_animation/visuals/godot.png" id="1_1ys8q"]
-[ext_resource type="Script" path="res://scenes/loading_animation/scripts/loading_animation.gd" id="1_mchmf"]
+[ext_resource type="Script" uid="uid://jnsblwlfbe62" path="res://scenes/loading_animation/scripts/loading_animation.gd" id="1_mchmf"]
 [ext_resource type="Texture2D" uid="uid://daqck3h8xlea" path="res://scenes/shared/visuals/circle_512.png" id="2_atxnr"]
 [ext_resource type="Texture2D" uid="uid://di607adgaag56" path="res://scenes/loading_animation/visuals/trail.png" id="4_gr6ov"]
 [ext_resource type="FontFile" uid="uid://b6nf5k17guhst" path="res://scenes/shared/fonts/lato/Lato-Regular.ttf" id="5_6dyc4"]
@@ -353,9 +353,9 @@ tracks/8/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bu4f0"]
 _data = {
-"RESET": SubResource("Animation_ctqpm"),
-"loop": SubResource("Animation_cho06"),
-"rotate": SubResource("Animation_iobch")
+&"RESET": SubResource("Animation_ctqpm"),
+&"loop": SubResource("Animation_cho06"),
+&"rotate": SubResource("Animation_iobch")
 }
 
 [node name="LoadingAnimation" type="Control"]

@@ -12,7 +12,8 @@ config_version=5
 
 config/name="godot_ui_components"
 config/tags=PackedStringArray("experiment")
-config/features=PackedStringArray("4.2", "GL Compatibility")
+run/main_scene="uid://dst0og0kjqo74"
+config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.png"
 
 [display]
@@ -22,6 +23,10 @@ window/size/viewport_height=1080
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="canvas_items"
+
+[dotnet]
+
+project/assembly_name="godot_ui_components"
 
 [editor]
 

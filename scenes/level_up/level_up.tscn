@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=3 uid="uid://bh44t48g0wayk"]
 
-[ext_resource type="Shader" path="res://scenes/shared/shaders/gradientgdshader.gdshader" id="1_o2e1d"]
-[ext_resource type="Script" path="res://scenes/level_up/level_up.gd" id="1_wg25o"]
+[ext_resource type="Shader" uid="uid://dljpqkqkq0e72" path="res://scenes/shared/shaders/gradientgdshader.gdshader" id="1_o2e1d"]
+[ext_resource type="Script" uid="uid://vrfwovw1qp03" path="res://scenes/level_up/level_up.gd" id="1_wg25o"]
 [ext_resource type="Texture2D" uid="uid://dskgiwy06ecu0" path="res://scenes/level_up/assets/badge.png" id="2_v4eyb"]
 [ext_resource type="Texture2D" uid="uid://v63l28dn6u5g" path="res://scenes/level_up/assets/star.png" id="3_0l633"]
 [ext_resource type="FontFile" uid="uid://wh31x17oioib" path="res://scenes/shared/fonts/roboto_condensed/RobotoCondensed-Regular.ttf" id="3_c22g7"]
@@ -29,7 +29,7 @@ colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 0.372549, 1, 1, 1, 0.329412, 1, 1
 gradient = SubResource("Gradient_faj36")
 
 [sub_resource type="Curve" id="Curve_lfrbs"]
-max_value = 2.5
+_limits = [0.0, 2.5, 0.0, 1.0]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 2.5), 0.0, 0.0, 0, 0]
 point_count = 2
 
@@ -39,8 +39,6 @@ curve = SubResource("Curve_lfrbs")
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ekdai"]
 particle_flag_disable_z = true
 gravity = Vector3(0, 0, 0)
-orbit_velocity_min = 0.0
-orbit_velocity_max = 0.0
 scale_curve = SubResource("CurveTexture_phrjk")
 color_ramp = SubResource("GradientTexture1D_my7b8")
 
@@ -73,12 +71,10 @@ curve = SubResource("Curve_xo2gi")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ddc2t"]
 lifetime_randomness = 0.48
+particle_flag_disable_z = true
 emission_shape = 3
 emission_box_extents = Vector3(80, 80, 1)
-particle_flag_disable_z = true
 gravity = Vector3(0, 0, 0)
-orbit_velocity_min = 0.0
-orbit_velocity_max = 0.0
 scale_min = 0.25
 scale_max = 0.7
 scale_curve = SubResource("CurveTexture_mxxu2")

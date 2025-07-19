@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://dbvprclxi0ngx"]
 
-[ext_resource type="Shader" path="res://scenes/loading_fluid/loading_fluid.gdshader" id="1_8picq"]
-[ext_resource type="Script" path="res://scenes/loading_fluid/scripts/loading_fluid.gd" id="1_e08c0"]
+[ext_resource type="Shader" uid="uid://b6g3fr7p7sxtc" path="res://scenes/loading_fluid/loading_fluid.gdshader" id="1_8picq"]
+[ext_resource type="Script" uid="uid://c6sq5uqyr8oeb" path="res://scenes/loading_fluid/scripts/loading_fluid.gd" id="1_e08c0"]
 [ext_resource type="Texture2D" uid="uid://daqck3h8xlea" path="res://scenes/shared/visuals/circle_512.png" id="1_srtjy"]
 
 [sub_resource type="Gradient" id="Gradient_msfi4"]
@@ -181,9 +181,9 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qu2yl"]
 _data = {
-"RESET": SubResource("Animation_5m86n"),
-"load": SubResource("Animation_ianh0"),
-"load_loop": SubResource("Animation_gp8a7")
+&"RESET": SubResource("Animation_5m86n"),
+&"load": SubResource("Animation_ianh0"),
+&"load_loop": SubResource("Animation_gp8a7")
 }
 
 [node name="LoadingFluid" type="Control"]

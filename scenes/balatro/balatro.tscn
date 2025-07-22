@@ -1,10 +1,8 @@
-[gd_scene load_steps=30 format=3 uid="uid://dst0og0kjqo74"]
+[gd_scene load_steps=27 format=3 uid="uid://dst0og0kjqo74"]
 
 [ext_resource type="PackedScene" uid="uid://ccpeukrdsfbkm" path="res://scenes/balatro/card.tscn" id="1_0kik2"]
 [ext_resource type="Shader" uid="uid://bcmgfhse6jna3" path="res://scenes/balatro/shaders/noise_move.gdshader" id="1_lux0i"]
 [ext_resource type="Script" uid="uid://035lng27owk0" path="res://scenes/balatro/scripts/balatro.gd" id="1_sd3ku"]
-[ext_resource type="FontFile" uid="uid://b6nf5k17guhst" path="res://scenes/shared/fonts/lato/Lato-Regular.ttf" id="2_02ra0"]
-[ext_resource type="Script" uid="uid://bx76f3k1kade3" path="res://scenes/balatro/resources/bbcode_rotation.gd" id="3_01uac"]
 [ext_resource type="Shader" uid="uid://cn36nbc7r7gul" path="res://scenes/shared/shaders/dissolve.gdshader" id="3_g5bs6"]
 [ext_resource type="Script" uid="uid://dxc10pq66km72" path="res://scenes/balatro/scripts/destroy_area.gd" id="4_4fdh5"]
 [ext_resource type="Shader" uid="uid://bepsosy3jgmq2" path="res://scenes/balatro/shaders/vhs.gdshader" id="6_xsyrq"]
@@ -32,9 +30,6 @@ noise = SubResource("FastNoiseLite_qcf7v")
 shader = ExtResource("1_lux0i")
 shader_parameter/noise_texture = SubResource("NoiseTexture2D_b60hj")
 shader_parameter/dir = Vector2(0.5, 0.5)
-
-[sub_resource type="RichTextEffect" id="RichTextEffect_rvvo8"]
-script = ExtResource("3_01uac")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jx6xw"]
 bg_color = Color(1, 0, 0.14902, 0.25098)
@@ -182,41 +177,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Parallax"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -183.0
-offset_top = 38.0
-offset_right = 183.0
-offset_bottom = 92.0
-grow_horizontal = 2
-theme_override_fonts/normal_font = ExtResource("2_02ra0")
-theme_override_font_sizes/normal_font_size = 38
-bbcode_enabled = true
-text = "[center][wave amp=20.0 freq=8.0 connected=1][rainbow freq=1.0 sat=0.8 val=1.0]Balatro recreation[/rainbow][/wave][/center]"
-
-[node name="CustomEffect" type="RichTextLabel" parent="Parallax"]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -183.0
-offset_top = -974.0
-offset_right = 183.0
-offset_bottom = -920.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_fonts/normal_font = ExtResource("2_02ra0")
-theme_override_font_sizes/normal_font_size = 38
-bbcode_enabled = true
-text = "[center][rotation rot=15 char_count=12]Custom effect[/rotation][/center]"
-scroll_active = false
-custom_effects = [SubResource("RichTextEffect_rvvo8")]
 
 [node name="DestroyArea" type="Panel" parent="Parallax"]
 layout_mode = 0
